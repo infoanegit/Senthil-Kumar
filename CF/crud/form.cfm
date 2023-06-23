@@ -5,7 +5,7 @@
 		<title>Table Entry</title>
 		<link rel="icon" type="imageicon" href="./assets/images/table.png">
 		<link rel="stylesheet" href="./assets/css/style.css">
-		<script src=".assets/jquery/jquery.min.js"></script>
+		<script src="./assets/js/jquery.min.js"></script>
    </head>
    <cfset employeeObJ = createObject("component","tagcloud")>
    <cfif structKeyExists(url,"id")>

@@ -8,7 +8,7 @@
         <cfargument name="location" required="true" type="string">
 
 
-        <cfquery name="employeeTbl" dataSource="training">
+        <cfquery name="employeeTbl" dataSource="sen_dsn">
             INSERT INTO test(FirstName,LastName,Email,age,Gender,Location) 
             values(
                 <cfqueryparam value="#arguments.Firstname#" cfsqltype="cf_sql_varchar">,
@@ -27,7 +27,7 @@
         <!---  <cfdump  var="#arguments#">
          <cfabort> --->
 
-        <cfquery name="employeeTbl" dataSource="training">
+        <cfquery name="employeeTbl" dataSource="sen_dsn">
             SELECT * FROM test
             <cfif len(arguments.id)>
                  WHERE Id= <cfqueryparam value="#arguments.ID#" cfsqltype="cf_sql_integer">;
@@ -46,7 +46,7 @@
         <cfargument name="gender" required="true" type="string">
         <cfargument name="location" required="true" type="string">
 
-        <cfquery name="employeeTbl" dataSource="training">
+        <cfquery name="employeeTbl" dataSource="sen_dsn">
             UPDATE test
             SET FirstName =  <cfqueryparam value="#arguments.Firstname#" cfsqltype="cf_sql_varchar">,
                 LastName =  <cfqueryparam value="#arguments.last#" cfsqltype="cf_sql_varchar">,
@@ -61,7 +61,7 @@
 
     <cffunction name="deleteData" access="Public" returnType="void">
         <cfargument name="ID" required="true" type="numeric">
-        <cfquery name="employeeTbl" dataSource="training">
+        <cfquery name="employeeTbl" dataSource="sen_dsn">
             DELETE FROM test WHERE ID = <cfqueryparam value="#arguments.ID#" cfsqltype="cf_sql_integer">
         </cfquery>
     </cffunction>
