@@ -9,7 +9,7 @@
 
 <body>
     <div class="container mt-3 margin-auto w-25 bg-dark text-center text-dark mx-auto p-2 rounded" id="click">
-        <h4 class="text-warning mt-5">Enter a string to reverse</h4>
+        <h4 class="text-warning mt-5">Palindrome</h4>
         <input type="Text" class="text mt-5" id="textbox"><br>
         <button class="btn btn-info mt-5" type="button" id="submit">Submit</button>
         <h4 id="display1" class="display text-light mt-3 text-center text-info"></h4>
@@ -22,10 +22,10 @@
             const last = textbox.splice(-1);
             const first = textbox[0];
             if (first == last) {
-                $("#display1").text("First and last element are same");
+                $("#display1").text("Given String is palindrome");
             }
             else {
-                $("#display1").text("Good word");
+                $("#display1").text("Given String is not a palindrome");
             }
         });
     </script>
