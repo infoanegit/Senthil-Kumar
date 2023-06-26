@@ -28,6 +28,7 @@
 			</cfif>
 		</body>
 		<script>
+			var array_regex = /^(\d|\w+( )*)(( )*,{1}( )*((\d|\w+(.){1}\d|\w+)|([\d|\w]+))( )*)+$/;
 			$(".textbox1").focus();
 			$('##form1').on("submit",function(){  
 				var form_1 = $("##textbox").val();
@@ -39,6 +40,10 @@
 					$("##display").html("Numeric values only allowed");
 					$("##display").css("color","red");
 					return false;  
+				} else if (!array_regex.test(form_1)) {
+					$("##display").html("Enter Valid List");
+					$("##display").css("color","red");
+					return false;
 				}else{
 					$("##display").hide(); 
 				}
