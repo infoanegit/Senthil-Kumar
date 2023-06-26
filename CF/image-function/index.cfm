@@ -2,9 +2,8 @@
 <html>
    <head>
 		<title>Upload Image</title>
-		<link rel="icon" type="imageicon" href="./table.png">
-		<link rel="stylesheet" href="./css/style.css">
-		<script src="./jquery/jquery.min.js"></script>
+		<link rel="stylesheet" href="./assets/css/style.css">
+		<script src="./assets/jquery/jquery.min.js"></script>
          <style>
             body {
                 background-image: linear-gradient(to right, ##ff1b6b , ##45caff);

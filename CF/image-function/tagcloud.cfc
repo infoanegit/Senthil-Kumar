@@ -18,7 +18,7 @@
 
      <cffunction name="getData" access="public" returnType="query">
          <cfargument name="ID" required="false" type="string" default="">
-         <cfquery name="imageTbl" dataSource="training">
+         <cfquery name="imageTbl" dataSource="sen_dsn">
             SELECT * FROM images
             <cfif len(arguments.id)>
                  WHERE Id= <cfqueryparam value="#arguments.ID#" cfsqltype="cf_sql_integer">

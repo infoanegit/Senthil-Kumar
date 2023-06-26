@@ -1,9 +1,8 @@
 <cfoutput>
     <head>
         <title>Details Page</title>
-        <link rel="icon" type="imageicon" href="./table.png">
-        <link rel="stylesheet" href="./css/style.css">
-        <script src="./jquery/jquery.min.js"></script>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="./assets/jquery/jquery.min.js"></script>
     </head>
     <cfset imageOBJ= createObject("component","tagcloud")>
     <cfset imgInfo = imageOBJ.getData("#url.id#")> 

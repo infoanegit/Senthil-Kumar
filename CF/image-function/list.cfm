@@ -1,7 +1,6 @@
 <cfoutput>
     <head>
         <title>List Page</title>
-        <link rel="icon" type="imageicon" href="./table.png">
         <link rel="stylesheet" href="./assets/css/style.css">
         <script src="./assets/jquery/jquery.min.js"></script>
     </head>
