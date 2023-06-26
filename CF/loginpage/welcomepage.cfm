@@ -21,7 +21,7 @@
         </form>
     <style>
         body {
-            background-image: url('./images/R.jpg');
+            background-image: url('./assets/images/R.jpg');
                 }
         </style>
     </body>
