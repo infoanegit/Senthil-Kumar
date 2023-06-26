@@ -70,7 +70,7 @@
 				var username = $("##usrName").val();
 				var mail = $("##mailID").val();
 				var capID = $("##captchabox").val();
-				var array_regex = /^(\d|\w+( )*)(( )*,{1}( )*((\d|\w+(.){1}\d|\w+)|([\d|\w]+))( )*)+$/;
+				var mail_regex = /^(\d|\w+( )*)(( )*,{1}( )*((\d|\w+(.){1}\d|\w+)|([\d|\w]+))( )*)+$/;
 				
 				if(username ==""){
 					$("##display1").html("Give your name to proceed");
@@ -80,11 +80,15 @@
 					$("##display1").html("Give your mailID to proceed");
 					$('.modalBtn').trigger('click');
 					return false;
+				}else if(!mail_regex.test(mail)){
+					$("##display1").html("Enter a valid email");
+					$('.modalBtn').trigger('click');
+					return false;
 				}else if(capID ==""){
 					$("##display1").html("Enter the Captcha");
 					$('.modalBtn').trigger('click');
 					return false;
-				}
+				}else{}
 			});
 		</script>
 		<style>
