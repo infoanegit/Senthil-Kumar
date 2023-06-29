@@ -11,10 +11,9 @@
 			<cfset StructClear(SESSION)>
 			<cflocation url="index.cfm" addToken="false">
 		</cfif>
-		<cfset dataOBJ= createObject("component","tagcloud")>
-		<cfset dataInfo = dataOBJ.getformData()> 
+		<cfset dataInfo = APPLICATION.dataOBJ.getformData()> 
 		<cfif structKeyExists(URL,"id")>
-			<cfset empInfo = dataOBJ.deleteData("#URL.id#")> 
+			<cfset empInfo = APPLICATION.dataOBJ.deleteData("#URL.id#")> 
 			<cflocation url="list.cfm" addToken="false">
 		</cfif>
 		<body>
