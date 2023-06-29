@@ -5,6 +5,7 @@
 			<title>Table Entry</title>
 			<link rel="icon" type="imageicon" href="./assets/images/list.png">
 			<link rel="stylesheet" href="./assets/css/style.css">
+			<link rel="stylesheet" href="./assets/css/style1.css">
 			<script src="./assets/js/jquery.min.js"></script>
 		</head>
 		<cfif structKeyExists(FORM,"LogoutBtn")>
@@ -19,7 +20,7 @@
 		</cfif>
 		<body>
 			<form method="post">
-				<div class="text-center mx-auto mt-4"><input type="submit" value="Logout" name="LogoutBtn" id="logout" class="btn btn-danger btn-md"></div>
+				<div class="text-center mx-auto mt-4"><input type="submit" value="Logout" name="LogoutBtn" id="logout" class="btn btn-danger button-92 btn-md"></div>
 			</form>
 				
 			<div class="col-sm-12 bg-muted text-white w-25 mt-3 p-3 mx-auto text-center"><h5>List of Details</h5></div>
@@ -39,12 +40,12 @@
 							<td>#datainfo.Name#</td>
 							<td>#datainfo.Description#</td>
 							<cfif SESSION.role EQ "Admin">
-								<td><a href="form.cfm?id=#dataInfo.id#" class="btn btn-warning">Edit</a></td>
-								<td><input type="button" class="btn btn-danger delete_btn btn-md" id="delete_btn" data-id="#dataInfo.ID#"
+								<td><a href="form.cfm?id=#dataInfo.id#" class="btn button-91 btn-sm">Edit</a></td>
+								<td><input type="button" class="btn btn-danger delete_btn btn-md button-62" id="delete_btn" data-id="#dataInfo.ID#"
 								 value="Delete"></td>
 							</cfif>
 							<cfif SESSION.role EQ "Editor">
-								<td><a href="form.cfm?id=#dataInfo.id#" class="btn btn-warning btn-md">Edit</a></td>
+								<td><a href="form.cfm?id=#dataInfo.id#" class="btn button-91 btn-md">Edit</a></td>
 							</cfif>
 						</tr>
 					</cfloop>
@@ -52,7 +53,7 @@
 			</table>
 			<cfif SESSION.role EQ "Admin" OR SESSION.role EQ "Editor">
 				<div class= "text-center mx-auto">
-					<a href="form.cfm" class="btn btn-info btn-md">ADD NEW</a>
+					<a href="form.cfm" class="btn button-85 btn-md">ADD NEW</a>
 				</div>
 			</cfif>
 		<body>

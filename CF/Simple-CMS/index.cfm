@@ -4,6 +4,7 @@
 		<title>Login Page</title>
 		<link rel="icon" type="imageicon" href="./assets/images/login.png">
 		<link rel="stylesheet" href="./assets/css/style.css">
+		<link rel="stylesheet" href="./assets/css/style1.css">
 		<script src="./assets/js/jquery.min.js"></script>
     </head>
 	
@@ -19,10 +20,10 @@
     </cfif>
     <body>
 		<form name="loginForm" method="post" class=" container mt-5 mx-auto w-50 " id="loginForm">
-			<div class="col-sm-12 p-3 bg-white shadow-lg text-white text-center rounded">
+			<div class="col-sm-12 p-3 bg-white button-27 text-white text-center rounded">
 				<div class="col-sm-12  text-center mx-auto w-50 ">
 					<img src="./assets/images/password.png " height="10%" width="10%">
-					<h2 class="text-primary">LOGIN</h2>
+					<h2 class="text-light">LOGIN</h2>
 				</div>
 				<div class=" container mx-auto">
 					<label for="usrTxtbox" class="form-label text-dark mt-2"><h5>Username *</h5></label><br/>
@@ -35,17 +36,15 @@
 					<h5 class="text-danger" id="display1"></h5>
 					<h5 class="text-danger" id="display2"></h5>
 				</div>
-                <div class=" container mx-auto p-3">
-					<input type="submit" value="Login" name="LoginBtn" id="submit" class=" btn-success text-white
+                <div class=" container mx-auto p-3 text-center ">
+					<input type="submit" value="Login" name="LoginBtn" id="submit" class=" btn-success button-69 text-dark 
 				      btn"></br>
 				</div>
         </form>
-
 		<style>
 			body {
-				background-image: url('./assets/images/bg2.jpg');
-				background-size: cover;
-				} 
+				background-color: ##000000;
+			} 
 		</style>
     </body>
 
