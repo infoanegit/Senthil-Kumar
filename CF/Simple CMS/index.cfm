@@ -50,14 +50,13 @@
     </body>
 
 	<script>
-	/* 	$(document).ready(function(){
+		$(document).ready(function(){
 			$("##display2").css("display","none")
 			$('##usrName,##usrPass').on('input', function(e) {
 				$('##inval').hide();
 			})
 			$('##usrName').focus();
-		})
- */
+		});
 		
 		$("##loginForm").on("submit", function(){
 			$("##display2").css("display","block")
