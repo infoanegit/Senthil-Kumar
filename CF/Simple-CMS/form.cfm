@@ -9,15 +9,14 @@
 			<link rel="stylesheet" href="./assets/css/style1.css">
 			<script src="./assets/js/jquery.min.js"></script>
 		</head>
-		<cfset dataOBJ = createObject("component","tagcloud")>
 		<cfif structKeyExists(URL,"id")>
-			<cfset dataInfo = dataOBJ.getformdata("#URL.id#")> 
+			<cfset dataInfo = APPLICATION.dataOBJ.getformdata("#URL.id#")> 
 		</cfif>
 		<cfif structKeyExists(FORM,"submit")>
 			<cfif structKeyExists(URL,"id")>
-				<cfset dataOBJ.updateformData(id=URL.id,pageName=FORM.pageName,desc=FORM.description)>
+				<cfset APPLICATION.dataOBJ.updateformData(id=URL.id,pageName=FORM.pageName,desc=FORM.description)>
 			<cfelse>
-				<cfset dataOBJ.insertformData(pageName=FORM.pageName,desc=FORM.description)>
+				<cfset APPLICATION.dataOBJ.insertformData(pageName=FORM.pageName,desc=FORM.description)>
 			</cfif>
 			<cflocation url="list.cfm" addToken="false">
 		</cfif>

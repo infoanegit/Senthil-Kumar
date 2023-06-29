@@ -10,9 +10,9 @@
 	
     
     <cfif structKeyExists(form,"LoginBtn")>
-        <cfset checkLogin = application.userObj.getData(username=form.usrTxtbox, password=form.passTxtbox)>
+        <cfset checkLogin = APPLICATION.dataOBJ.getData(username=form.usrTxtbox, password=form.passTxtbox)>
         <cfif checkLogin.recordcount>
-			<cfset session.Role = checkLogin.Role />
+			<cfset SESSION.Role = checkLogin.Role />
             <cflocation url="list.cfm" addToken="false">
         <cfelse>
             <div class="mt-5 mx-auto text-center"><h5 class="text-danger" id="inval">INVALID LOGIN CREDENTIALS</h5></div>
