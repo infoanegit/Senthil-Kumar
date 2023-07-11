@@ -15,6 +15,9 @@
             <cflocation  url="list.cfm">
         </cfif>
     </cfif>
+    <cfdump  var="var">
+
+    
 
     <form method="post" class=" container mt-5 mx-auto w-50">
         <div class="col-sm-12  bg-dark text-white text-center rounded">
