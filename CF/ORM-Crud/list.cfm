@@ -4,6 +4,7 @@
 		<title>ORM</title>
 		<link rel="stylesheet" href="./assets/css/style.css">
 		<script src="./assets/js/jquery.min.js"></script>
+
 	</head>
 	<cfset crud = EntityLoad("table")>
 	<cfif structKeyExists(url,"id")>
