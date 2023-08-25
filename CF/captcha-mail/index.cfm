@@ -70,7 +70,7 @@
 				var username = $("##usrName").val();
 				var mail = $("##mailID").val();
 				var capID = $("##captchabox").val();
-				var mail_regex = /^(\d|\w+( )*)(( )*,{1}( )*((\d|\w+(.){1}\d|\w+)|([\d|\w]+))( )*)+$/;
+				var mail_regex =  /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 				
 				if(username ==""){
 					$("##display1").html("Give your name to proceed");
